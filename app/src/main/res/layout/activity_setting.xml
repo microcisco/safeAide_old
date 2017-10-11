@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:gaga="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/tv_title"
+        android:text="设置"
+      />
+
+
+
+    <com.m520it.mobilsafe.views.SettingItemView
+
+        android:id="@+id/siv_update"
+        android:layout_marginTop="10dp"
+        gaga:desc="开启自动更新"
+        gaga:position="first"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+    />
+    <com.m520it.mobilsafe.views.SettingItemView
+        android:id="@+id/siv_black_interface"
+        gaga:desc="黑名单拦截"
+        gaga:position="middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.m520it.mobilsafe.views.SettingItemView
+        android:id="@+id/siv_show_address"
+        gaga:desc="开启号码归属地显示"
+        gaga:position="middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.m520it.mobilsafe.views.SettingItemView
+        android:id="@+id/siv_watch_dog"
+        gaga:desc="开启看门口服务"
+        gaga:position="last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <com.m520it.mobilsafe.views.SelectBackgroundView
+        android:id="@+id/sbv_background"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    gaga:bigtitle="更改归属地显示风格"
+    gaga:smalla="苹果绿"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+
+</LinearLayout>

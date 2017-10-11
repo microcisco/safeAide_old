@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:text="缓存清理"
+            style="@style/tv_title"/>
+
+        <Button
+            android:id="@+id/btn_clear_all"
+            android:onClick="cleanAll"
+            android:layout_width="wrap_content"
+            android:text="立即清理"
+            style="@style/Base.Widget.AppCompat.Button.Small"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:background="@drawable/btn_selector"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/pb_clean"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/progressbar_background"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_clean_name"
+            android:layout_width="match_parent"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              xmlns:gaga="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:text="进程设置"
+        style="@style/tv_title"/>
+
+    <com.m520it.mobilsafe.views.SettingItemView
+        android:id="@+id/stv_show_sys"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        gaga:desc="显示系统进程"
+        gaga:position="first"
+        ></com.m520it.mobilsafe.views.SettingItemView>
+
+    <com.m520it.mobilsafe.views.SettingItemView
+        android:id="@+id/stv_autl_kill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        gaga:desc="锁屏清理进程"
+        gaga:position="last"
+        ></com.m520it.mobilsafe.views.SettingItemView>
+
+    </LinearLayout>

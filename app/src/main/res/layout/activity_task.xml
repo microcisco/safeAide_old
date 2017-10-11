@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:text="进程管理"
+        style="@style/tv_title"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_taskcount"
+            android:layout_width="wrap_content"
+            android:text="运行进程个数:30"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_mem"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="剩余/总内存:30:50M"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="正在加载"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_name_count"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:text="用户进程:23个"
+            android:background="#ff888888"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/btn_selector"
+            android:onClick="selectAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="全选"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/btn_selector"
+            android:onClick="selectRever"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="反选"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/btn_selector"
+            android:onClick="killAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="清理"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/btn_selector"
+            android:onClick="setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="设置"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

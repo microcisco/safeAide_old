@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemView">
+        <attr name="desc" format="string"/>
+        <attr name="position">
+            <enum name="first"  value="0"></enum>
+            <enum name="middle"  value="1"></enum>
+            <enum name="last"  value="2"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SelectBackgroundView">\
+    <attr name="bigtitle" format="string"/>
+    <attr name="smalla" format="string"/>
+
+    </declare-styleable>
+</resources>

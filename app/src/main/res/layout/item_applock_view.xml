@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="55dp"
+        android:src="@drawable/a"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:text="手机卫士"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_unlock"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_button_lock_default"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

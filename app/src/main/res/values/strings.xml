@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dashen4</string>
+    <string name="urlString">http://192.168.35.10:8080/info.json</string>
+    <string name="sample_device_admin">hah</string>
+    <string name="sample_device_admin_description"/>
+</resources>
